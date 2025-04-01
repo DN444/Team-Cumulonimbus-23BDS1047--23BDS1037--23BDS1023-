@@ -1,38 +1,149 @@
+/* App.css - Updated to match retro theme */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: #414141; /* Matches body background from global.css */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  color: #abb78a; /* Matching score color from global.css */
+  font-family: 'VT323', monospace; /* Consistent font family */
+}
+
+/* Canvas styling matching game-board layers */
+canvas {
+  background-color: #c4cfa3; /* Game board background from Gameboard.css */
+  border: 10px solid #595f43; /* Outer border color */
+  box-shadow: 
+    inset 0 0 0 10px #8b966c, /* Inner border effect */
+    0 0 10px rgba(0, 0, 0, 0.5); /* Outer shadow */
+  image-rendering: pixelated;
+  margin: 20px;
+  border-radius: 30px; /* Matching game-border-1 */
+}
+
+/* Buttons matching score display styling */
+button {
+  padding: 10px 20px;
+  font-size: 24px; /* Larger size matching score text */
+  margin: 10px;
+  cursor: pointer;
+  background-color: #595f43; /* Dark border color */
+  border: 3px solid #abb78a; /* Light border color */
+  color: #d8ddca; /* High score color */
+  font-family: 'VT323', monospace;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.1s ease;
+}
+
+button:hover {
+  background-color: #8b966c; /* Mid-tone color from game-border-3 */
+  border-color: #595f43;
+  color: #fff;
+}
+
+/* Additional matching styles */
+.game-title {
+  font-size: 2.5em;
+  color: #d8ddca; /* High score color */
+  text-shadow: 2px 2px #595f43;
+  margin-bottom: 20px;
+}
+
+.status-text {
+  color: #768b5f;
+  font-size: 1.5em;
+  margin: 15px 0;
+}
+/* App.css */
+.color-selection {
+  text-align: center;
+  padding: 2rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.color-buttons button {
+  margin: 1rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background: #444;
+  border: 2px solid #fff;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.color-buttons button:hover {
+  background: #666;
+}
+
+.game-info {
+  text-align: center;
+  color: white;
+  margin: 1rem 0;
+}
+
+.chess-board-container {
+  margin: 0 auto;
+  width: fit-content;
+}
+/* App.css */
+.akinator-container {
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.buttons button {
+  padding: 10px;
+  font-size: 1rem;
+  background: #444;
+  border: 2px solid #fff;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.progress-bar {
+  width: 300px;
+  height: 20px;
+  background: #333;
+  margin: 20px auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: #4CAF50;
+  transition: width 0.3s ease;
+}
+
+.guess-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+.guess-image {
+  font-size: 4rem;
+  margin: 10px;
+}
+
+.error-message {
+  color: #ff4444;
+  margin: 20px;
 }

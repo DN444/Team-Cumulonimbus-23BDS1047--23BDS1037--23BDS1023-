@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #414141;
+    font-family: 'VT323', monospace;
+  }
+  
+  .scores {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 420px;
+    margin-bottom: 10px;
+  }
+  
+  .score {
+    color: #abb78a;
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 10px 0;
+  }
+  
+  .high-score {
+    color: #d8ddca;
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 10px 0;
+  }
+  
+  .instruction-text {
+    position: absolute;
+    top: 60%;
+    color: #333;
+    width: 300px;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 30px;
+    margin: 0;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 20%;
+  }
+
+  /* Game Selection Styles */
+.game-selection {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+  
+  .game-button {
+    position: relative;
+    padding: 1.5rem 3rem;
+    background-color: #595f43;
+    border: 3px solid #abb78a;
+    color: #d8ddca;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .game-button:hover {
+    background-color: #8b966c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .button-text {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .pixel-corner {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #abb78a;
+  }
+  
+  .pixel-corner:nth-child(1) {
+    top: 0;
+    left: 0;
+  }
+  
+  .pixel-corner:nth-child(2) {
+    top: 0;
+    right: 0;
+  }
+  
+  .pixel-corner:nth-child(3) {
+    bottom: 0;
+    left: 0;
+  }
+  
+  .pixel-corner:nth-child(4) {
+    bottom: 0;
+    right: 0;
+  }
