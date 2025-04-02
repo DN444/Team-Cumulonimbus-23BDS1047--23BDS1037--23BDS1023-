@@ -11,7 +11,15 @@ import './App.css';
 function Home() {
   return (
     <div className="game-container">
-      <h1 className="logo">Retro Arcade</h1>
+      <h1 className="logo">Web Programming Lab</h1>
+      <p className="instruction-text">
+        <strong>Group Members:</strong><br/>
+        Dipayan Nandi 23BDS1047<br/>
+        Avirup Kundu 23BDS1037<br/>
+        Aditya Ghosh Dastidar 23BDS1023<br/>
+        Aayush Kumar 23BDS1087<br/>
+        Second year CSE (Data Science)<br/>
+      </p>
       <div className="game-selection">
         <Link to="/pong" className="game-button">
           <span className="button-text">Play Pong!</span>
@@ -34,9 +42,6 @@ function Home() {
           <span className="pixel-corner"></span>
         </Link>
       </div>
-      <p className="instruction-text">
-        Use arrow keys or mouse to play<br/>
-      </p>
     </div>
   );
 }

@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 .App {
   text-align: center;
-  background-color: #414141; /* Matches body background from global.css */
+  background-color: #5F9EA0; /* Matches body background from global.css */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -10,6 +10,7 @@
   justify-content: center;
   color: #abb78a; /* Matching score color from global.css */
   font-family: 'VT323', monospace; /* Consistent font family */
+  font-size: 20px;
 }
 
 /* Canvas styling matching game-board layers */
@@ -90,13 +91,6 @@ button:hover {
   margin: 0 auto;
   width: fit-content;
 }
-/* App.css */
-.akinator-container {
-  text-align: center;
-  padding: 20px;
-  color: white;
-}
-
 .buttons {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
